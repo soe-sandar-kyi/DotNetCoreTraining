@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCoreTraining.Database
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCoreTrainingConsoleApp2", "DotNetCoreTrainingConsoleApp2\DotNetCoreTrainingConsoleApp2.csproj", "{DBDF1BED-F65D-419F-A812-5944CDCB0CDD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetTraining.RestApi", "DotNetTraining.RestApi\DotNetTraining.RestApi.csproj", "{1AB636C9-E5C3-4C8A-82CA-CC259E048E5F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{DBDF1BED-F65D-419F-A812-5944CDCB0CDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBDF1BED-F65D-419F-A812-5944CDCB0CDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBDF1BED-F65D-419F-A812-5944CDCB0CDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AB636C9-E5C3-4C8A-82CA-CC259E048E5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AB636C9-E5C3-4C8A-82CA-CC259E048E5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AB636C9-E5C3-4C8A-82CA-CC259E048E5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AB636C9-E5C3-4C8A-82CA-CC259E048E5F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
