@@ -58,6 +58,7 @@ namespace DotNetCoreTraining.ConsoleApp
             //Console.WriteLine(dr["DeleteFlag"]);
             //}
         }
+
         public void Create()
         {
             Console.Write("Blog Title: ");
@@ -127,6 +128,7 @@ namespace DotNetCoreTraining.ConsoleApp
             Console.WriteLine("Blog Author: " + dr["BlogAuthor"]);
             Console.WriteLine("Blog Content: " + dr["BlogContent"]);
         }
+
         public void Update()
         {
             Console.Write("Enter Blog Id: ");
@@ -160,6 +162,7 @@ namespace DotNetCoreTraining.ConsoleApp
             Console.WriteLine(result == 1 ? "Data updated successfully" : "Data not updateds");
             connection.Close();
         }
+
         public void Delete()
         {
             Console.Write("Enter Blog Id: ");

@@ -9,7 +9,9 @@ Console.WriteLine("Hello, World!");
 //Console.ReadKey();
 //md => markdown
 
-AdoDotNetCRUD adoDotNetCRUD = new AdoDotNetCRUD();
+
+//Ado.Net CRUD
+//AdoDotNetCRUD adoDotNetCRUD = new AdoDotNetCRUD();
 
 //Read data
 //adoDotNetCRUD.Read();
@@ -27,4 +29,13 @@ AdoDotNetCRUD adoDotNetCRUD = new AdoDotNetCRUD();
 //adoDotNetCRUD.Delete();
 
 //Delete data
-adoDotNetCRUD.DeletePermanently();
+//adoDotNetCRUD.DeletePermanently();
+
+//Dapper CRUD
+DapperCRUD dapperCRUD = new DapperCRUD();
+//dapperCRUD.Read();
+//dapperCRUD.Create("Hello Testing", "SSDK", "Testing");
+//dapperCRUD.Edit(1);
+//dapperCRUD.Edit(2);
+//dapperCRUD.Update("Hello Testing", "SSDK", "updated Testing",4);
+dapperCRUD.Delete(3);
