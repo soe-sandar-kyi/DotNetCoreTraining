@@ -32,10 +32,18 @@ Console.WriteLine("Hello, World!");
 //adoDotNetCRUD.DeletePermanently();
 
 //Dapper CRUD
-DapperCRUD dapperCRUD = new DapperCRUD();
+//DapperCRUD dapperCRUD = new DapperCRUD();
 //dapperCRUD.Read();
 //dapperCRUD.Create("Hello Testing", "SSDK", "Testing");
 //dapperCRUD.Edit(1);
 //dapperCRUD.Edit(2);
 //dapperCRUD.Update("Hello Testing", "SSDK", "updated Testing",4);
-dapperCRUD.Delete(3);
+//dapperCRUD.Delete(3);
+
+//Entity framework core
+EFCoreCRUD eFCoreCRUD = new EFCoreCRUD();
+//eFCoreCRUD.Read();
+//eFCoreCRUD.Create("Test Ef core", "SSDK", "Ef core testing");
+//eFCoreCRUD.Edit(4);
+//eFCoreCRUD.Update(5, "Test Ef core", "SSDK", "Ef core testing");
+eFCoreCRUD.Delete(10);

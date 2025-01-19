@@ -32,7 +32,7 @@ namespace DotNetCoreTraining.ConsoleApp
             using (IDbConnection db = new SqlConnection(_connectionString))
             {
                 string query = "select * from Blog where DeleteFlag=0";
-                var bloglist = db.Query<BlogDataModel>(query).ToList();
+                var bloglist = db.Query<BlogDapperDataModel>(query).ToList();
                 foreach (var item in bloglist)
                 {
                     Console.WriteLine(item.BlogId);
@@ -58,7 +58,7 @@ namespace DotNetCoreTraining.ConsoleApp
 
             using (IDbConnection db = new SqlConnection(_connectionString))
             {
-                int result = db.Execute(query, new BlogDataModel
+                int result = db.Execute(query, new BlogDapperDataModel
                 {
                     BlogTitle = title,
                     BlogAuthor = author,
@@ -73,7 +73,7 @@ namespace DotNetCoreTraining.ConsoleApp
             using (IDbConnection db = new SqlConnection(_connectionString))
             {
                 string query = "select * from Blog where DeleteFlag=0 and BlogId=@BlogId";
-                BlogDataModel? blog = db.Query<BlogDataModel>(query, new BlogDataModel
+                BlogDapperDataModel? blog = db.Query<BlogDapperDataModel>(query, new BlogDapperDataModel
                 {
                     BlogId = id,
                 }).FirstOrDefault();
@@ -103,7 +103,7 @@ namespace DotNetCoreTraining.ConsoleApp
 
             using (IDbConnection db = new SqlConnection(_connectionString))
             {
-                int result = db.Execute(query, new BlogDataModel
+                int result = db.Execute(query, new BlogDapperDataModel
                 {
                     BlogId = id,
                     BlogTitle = title,
@@ -119,7 +119,7 @@ namespace DotNetCoreTraining.ConsoleApp
             string query = "delete from Blog where BlogId=@BlogId";
             using(IDbConnection db=new SqlConnection(_connectionString))
             {
-                int result = db.Execute(query, new BlogDataModel
+                int result = db.Execute(query, new BlogDapperDataModel
                 {
                     BlogId = id,
                 });
